@@ -1,0 +1,39 @@
+#box1, #box2, #box3 {
+	width: 50%;
+	margin: 75px auto 0px auto;
+	border: 2px cornflowerblue outset;
+	border-radius: 10px;
+	padding: 20px;
+	background: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+#start-button, #end-button {
+	width: 100px;
+	height: 30px;
+}
+
+.button-div {
+	padding: 10px;
+	width: 100px;
+	margin: auto;
+}
+
+body {
+	background-image: url("../images/wallpaper.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+font-family: 'Bitter', serif;
+}
+
+#box2, #box3 {
+	display: none;
+}

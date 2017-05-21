@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dskufhlsdjf</title>
+</head>
+<body>
+<script type="text/javascript">
+	var number = 1;
+
+	for (var i = 0, i<100, i++;) {
+	if (number % 3 === 0) {
+		console.log("fizz");
+		number++;	
+	} if ( number % 5 === 5)
+	console.log("buzz");	
+	number++;	
+	
+	} if (number % 3 === 0 && number % 5 === 0) {
+		console.log("fizzbuzz");
+		number++;
+	} else {
+		console.log(number);
+		number++;
+
+	}};
+
+</script>
+	
+</body>
+</html>
