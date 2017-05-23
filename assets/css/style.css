@@ -1,13 +1,14 @@
 #box1, #box2, #box3 {
 	width: 50%;
 	margin: 75px auto 75px auto;
-	border: 2px cornflowerblue outset;
-	border-radius: 10px;
+	/*border: 2px cornflowerblue outset;*/
+	/*border-radius: 10px;*/
 	padding: 20px;
 	background: white;
+	box-shadow: 4px 4px 20px 0px black;
 }
 
-h1 {
+h1,h3 {
 	text-align: center;
 }
 
@@ -43,6 +44,6 @@ font-family: 'Bitter', serif;
 }
 
 #gif {
-	max-width:300px;
+	max-width:450px;
 	margin:auto;
 }

@@ -10,8 +10,7 @@ $(document).ready(function() {
         question7 = $("[name='question7']"),
         question8 = $("[name='question8']"),
         question9 = $("[name='question9']"),
-        question10 = $("[name='question10']")
-    ]
+        question10 = $("[name='question10']")];
 
     var counter = {
         time: 30000,
@@ -22,7 +21,14 @@ $(document).ready(function() {
         count: function() {
             counter.time -= 10;
             if (counter.time <= 0) {
-                timesUp();
+                timeElapsed = counter.time;
+                clearInterval(intervalId);
+                $("#box1").hide();
+                $("#box2").hide();
+                $("#box3").css("display", "block");
+                $("#times-up").html("You ran out of time!");
+                document.getElementById('audio').play();
+                checkQuiz();
             }
 
             currentTime = counter.timeConverter(counter.time);
@@ -47,17 +53,6 @@ $(document).ready(function() {
         },
     }
 
-    function timesUp() {
-        timeElapsed = counter.time;
-        clearInterval(intervalId);
-        $("#box1").hide();
-        $("#box2").hide();
-        $("#box3").css("display", "block");
-        $("#times-up").html("You ran out of time!");
-        document.getElementById('audio').play();
-        checkQuiz();
-    };
-
     function checkQuiz() {
         var correct = 0,
             incorrect = 0,
@@ -65,9 +60,8 @@ $(document).ready(function() {
             range = 0,
             messages = ["You didn't do so hot. Try watching a few more movies and come back later!",
                 "So you know a thing or two about Miyazaki! You're allowed to call yourself a fan.",
-                "You're the bonafide hustler of Miyazaki references! Way to go."
-            ],
-            gifs = ["assets/images/sen.gif","assets/images/sootsprites.gif","assets/images/totoro.gif" ];
+                "You're the bonafide hustler of Miyazaki references! Way to go."],
+            gifs = ["assets/images/sen.gif", "assets/images/sootsprites.gif", "assets/images/totoro.gif"];
 
         timeElapsed = (30000 - counter.time) / 1000;
         clearInterval(intervalId);
@@ -78,7 +72,7 @@ $(document).ready(function() {
             $("#number-unanswered").html(answered);
             $("#time-elapsed").html(timeElapsed);
             $("#message-p").html(messages[range]);
-            $("#gif").attr("src",gifs[range]);
+            $("#gif").attr("src", gifs[range]);
         };
 
         for (var i = 0; i < myArr.length; i++) {
