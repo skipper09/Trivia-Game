@@ -66,15 +66,6 @@ $(document).ready(function() {
         timeElapsed = (30000 - counter.time) / 1000;
         clearInterval(intervalId);
 
-        function displayScore() {
-            $("#number-correct").html(correct);
-            $("#number-incorrect").html(incorrect);
-            $("#number-unanswered").html(answered);
-            $("#time-elapsed").html(timeElapsed);
-            $("#message-p").html(messages[range]);
-            $("#gif").attr("src", gifs[range]);
-        };
-
         for (var i = 0; i < myArr.length; i++) {
             for (var j = 0; j < question1.length; j++) {
                 if (myArr[i][j].value == "true" && myArr[i][j].checked) {
@@ -101,7 +92,12 @@ $(document).ready(function() {
             range = 2;
         }
 
-        displayScore();
+        $("#number-correct").html(correct);
+        $("#number-incorrect").html(incorrect);
+        $("#number-unanswered").html(answered);
+        $("#time-elapsed").html(timeElapsed);
+        $("#message-p").html(messages[range]);
+        $("#gif").attr("src", gifs[range]);
     }
 
     $("#start-button").on("click", function() {

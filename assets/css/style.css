@@ -1,49 +1,59 @@
-#box1, #box2, #box3 {
-	width: 50%;
-	margin: 75px auto 75px auto;
-	/*border: 2px cornflowerblue outset;*/
-	/*border-radius: 10px;*/
-	padding: 20px;
-	background: white;
-	box-shadow: 4px 4px 20px 0px black;
+#box1,
+#box2,
+#box3 {
+    width: 50%;
+    margin: 75px auto 75px auto;
+    /*border: 2px cornflowerblue outset;*/
+    /*border-radius: 10px;*/
+    padding: 20px;
+    background: white;
+    box-shadow: 4px 4px 20px 0px black;
 }
 
-h1,h3 {
-	text-align: center;
+h1,
+h3 {
+    text-align: center;
 }
 
-#start-button, #end-button, #restart {
-	width: 100px;
-	height: 30px;
+#start-button,
+#end-button,
+#restart {
+    width: 100px;
+    height: 30px;
 }
 
 .button-div {
-	padding: 10px;
-	width: 100px;
-	margin: auto;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
 }
 
 body {
-	background-image: url("../images/wallpaper.jpg");
-	background-repeat: no-repeat;
+    background-image: url("../images/wallpaper.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
     font-family: 'Raleway', sans-serif;
 }
 
-h1,h2,h3,h4,h5 {
-font-family: 'Bitter', serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bitter', serif;
 }
 
-#box2, #box3 {
-	display: none;
+#box2,
+#box3 {
+    display: none;
 }
 
 #time-header {
-	text-align: center;
+    text-align: center;
 }
 
 #gif {
-	max-width:450px;
-	margin:auto;
+    max-width: 450px;
+    margin: auto;
 }
