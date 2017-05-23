@@ -6,14 +6,15 @@
     <title>Hayao Miyazaki Triva Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
+    <audio id="audio" src="assets/images/timesup.mp3" autostart="false" ></audio>
 </head>
 
 <body>
     <div id="box1">
         <h1>Hayao Miyazaki Triva Game</h1>
         <hr>
-        <p>Are you a big fan of Hayao Miyazaki? See how many questions you can get right in this timed trivia game!</p>
-        <p>Press the button below to start your timed game. You'll have 30 seconds to answer 10 questions!</p>
+        <p>You think you know Hayao Miyazaki? See how many questions you can get right in this timed trivia quiz!</p>
+        <p>Press the button below to start the quiz. You'll have 30 seconds to answer 10 questions!</p>
         <div class="button-div">
             <button id="start-button">Start</button>
         </div>
@@ -121,7 +122,7 @@
     </div>
     <div id="box3">
         <p id="correct-or-not"></p>
-        <h3 id="times-up">Time's Up!</h3>
+        <h3 id="times-up">All Done!</h3>
         <p>You got <span id="number-correct"></span> correct answers in <span id="time-elapsed"></span> seconds.</p>
         <p>Incorrect answers: <span id="number-incorrect"></span></p>
         <p>Unanswered: <span id="number-unanswered"></span></p>

@@ -41,6 +41,7 @@ $(document).ready(function() {
         $("#box2").hide();
         $("#box3").css("display", "block");
         $("#times-up").html("You ran out of time!");
+        document.getElementById('audio').play();
         checkQuiz();
     }
 
@@ -78,7 +79,7 @@ $(document).ready(function() {
   					incorrect++;
   					answered--;
   				} 
-  				
+
   			} displayScore();
   		}	
     }
