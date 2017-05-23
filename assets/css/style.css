@@ -1,6 +1,6 @@
 #box1, #box2, #box3 {
 	width: 50%;
-	margin: 75px auto 0px auto;
+	margin: 75px auto 75px auto;
 	border: 2px cornflowerblue outset;
 	border-radius: 10px;
 	padding: 20px;
@@ -11,7 +11,7 @@ h1 {
 	text-align: center;
 }
 
-#start-button, #end-button {
+#start-button, #end-button, #restart {
 	width: 100px;
 	height: 30px;
 }
@@ -36,4 +36,8 @@ font-family: 'Bitter', serif;
 
 #box2, #box3 {
 	display: none;
+}
+
+#time-header {
+	text-align: center;
 }

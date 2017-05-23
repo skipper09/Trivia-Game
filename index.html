@@ -6,133 +6,131 @@
     <title>Hayao Miyazaki Triva Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="box1">
         <h1>Hayao Miyazaki Triva Game</h1>
         <hr>
-        <p>Do you consider yourself a big fan of Hayao Miyazaki? See how well you know him and his films with a fun trivia game!</p>
-        <p>Press the button below to start your timed quiz. You will have 20 seconds to answer 10 questions!</p>
+        <p>Are you a big fan of Hayao Miyazaki? See how many questions you can get right in this timed trivia game!</p>
+        <p>Press the button below to start your timed game. You'll have 30 seconds to answer 10 questions!</p>
         <div class="button-div">
             <button id="start-button">Start</button>
         </div>
     </div>
     <div id="box2">
-        <h3 id="time remaining"></h3>
+        <h3 id="time-header">Time Remaining: <br><span id="time-remaining">60:00</span></h3> 
+        
+        <h3> Questions</h3>
         <p id="question1"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
+        <form name="quiz">
+            <p>What animation studio did Miyazaki and three others form in 1985?</p>
+            <input type="radio" name="question1" value="true"> Studio Ghibli
             <br>
-            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="question1" value="false"> Toei Animation  
             <br>
-            <input type="radio" name="gender" value="other"> Other
+            <input type="radio" name="question1" value="false"> Nippon Animation
             <br>
-            <input type="radio" name="gender" value="other"> Other
+            <input type="radio" name="question1" value="true"> Funimation
+
+            <p id="question2">What character is in the studio's logo?</p>
+            <input type="radio" name="question2" value="false"> A goldfish
+            <br>
+            <input type="radio" name="question2" value="false"> A panda
+            <br>
+            <input type="radio" name="question2" value="true"> A totoro
+            <br>
+            <input type="radio" name="question2" value="false"> A soot sprite
+
+            <p id="question3">Which composer has made scores for most of Miyazaki's films?<p>
+            <input type="radio" name="question3" value="false"> Yuji Ohno
+            <br>
+            <input type="radio" name="question3" value="false"> Keiichi Suzuki
+            <br>
+            <input type="radio" name="question3" value="false"> Takeo Watanabi
+            <br>
+            <input type="radio" name="question3" value="true"> Joe Hisaishi
+
+            <p id="question4">Which film by Miyazaki is the second highest grossing anime genre film?</p>
+            <input type="radio" name="question4" value="false"> Howl's Moving Castle
+            <br>
+            <input type="radio" name="question4" value="true"> Spirited Away
+            <br>
+            <input type="radio" name="question4" value="false"> Ponyo
+            <br>
+            <input type="radio" name="question4" value="false"> Princess Mononoke
+
+            <p id="question5">What creature attacked the village at the beginning of Princess Mononoke?</p>
+            <input type="radio" name="question5" value="false"> A wolf
+            <br>
+            <input type="radio" name="question5" value="false"> An eagle
+            <br>
+            <input type="radio" name="question5" value="true"> A boar
+            <br>
+            <input type="radio" name="question5" value="false"> A giant beetle
+
+            <p id="question6">In Spirited Away, Yubaba's sister transforms her son into what?</p>
+            <input type="radio" name="question6" value="false"> A girl
+            <br>
+            <input type="radio" name="question6" value="false"> A snake
+            <br>
+            <input type="radio" name="question6" value="false"> A frog
+            <br>
+            <input type="radio" name="question6" value="true"> A mouse
+
+            <p id="question7">In Nausicaä of the Valley of the Wind, Princess Kushana has a secret. What is it?</p>
+            <input type="radio" name="question7" value="false"> She's illegitimate
+            <br>
+            <input type="radio" name="question7" value="false"> She's male
+            <br>
+            <input type="radio" name="question7" value="true"> She has a missing arm
+            <br>
+            <input type="radio" name="question7" value="false"> She knows about Nausicaä's secret garden
+
+            <p id="question8">When Mei storms off and gets lost in My Neighbor Totoro, she's trying to bring what to her mother?</p>
+            <input type="radio" name="question8" value="false"> A purse
+            <br>
+            <input type="radio" name="question8" value="true"> A fresh ear of corn
+            <br>
+            <input type="radio" name="question8" value="false"> A kitten
+            <br>
+            <input type="radio" name="question8" value="false"> A good report card
+
+            <p id="question9">What was the first feature film Miyazaki directed?</p>
+            <input type="radio" name="question9" value="false"> Howl's Moving Castle
+            <br>
+            <input type="radio" name="question9" value="ture"> The Castle of Cagliostro
+            <br>
+            <input type="radio" name="question9" value="false"> Nausicaä of the Valley of the Wind
+            <br>
+            <input type="radio" name="question9" value="false"> Porco Rosso
+
+            <p id="question10">Miyazaki announced his retirement in what year?</p>
+            <input type="radio" name="question10" value="false"> 2017
+            <br>
+            <input type="radio" name="question10" value="false"> 2009
+            <br>
+            <input type="radio" name="question10" value="true"> 2013
+            <br>
+            <input type="radio" name="question10" value="false"> 2001
+            <br><br>
+            <div class="button-div">
+            <input class="button-div" type="button" id="end-button" value="I'm Finished!">
+            </div>
         </form>
-        <p id="question2"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question3"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question4"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question5"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question6"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question7"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question8"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question9"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
-        <p id="question10"></p>
-        <form>
-            <input type="radio" name="gender" value="male"> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </form>
+    </div>
+    <div id="box3">
+        <p id="correct-or-not"></p>
+        <h3 id="times-up">Time's Up!</h3>
+        <p>You got <span id="number-correct"></span> correct answers in <span id="time-elapsed"></span> seconds.</p>
+        <p>Incorrect answers: <span id="number-incorrect"></span></p>
+        <p>Unanswered: <span id="number-unanswered"></span></p>
         <div class="button-div">
-            <button id="end-button">Done</button>
+            <button id="restart">Try Again</button>
         </div>
     </div>
-        <div id="box3">
-    <p id="correct-or-not">fsdfsd</p>
-    <p id="times-up">Time's Up!</p>
-
-        <p id="number-correct">sdkjhfksdf</p>
-        <p id="number-incorrect">sdfsdf</p>
-        <p id="number-unanswered">sdfsdf</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
